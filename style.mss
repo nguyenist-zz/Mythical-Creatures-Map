@@ -1,7 +1,8 @@
-// Languages ////////////////////////////////////////////
+// Languages //
 @name: '[name_en]';
 
-// Main Colors ////////////////////////////////////////////
+
+// Main Colors //
 @land: #fff8f0;
 @water: #f4f1be;
 @park: #798859;
@@ -12,17 +13,14 @@ Map {
   background-image-opacity: 0.2;
 }
 
-// Political boundaries ////////////////////////////////////////////
+// Political boundaries //
 
 #admin[maritime=0][zoom>=3] {
   line-join: miter;
   line-color: #3f2308;
-  //line-pattern-file: url(img/pen.png);
-  //line-pattern-clip: true; //default for best rendering performance
-  //line-pattern-geometry-transform:rotate(1,10,3);
   comp-op: multiply;
   
-  // Countries
+// Countries //
   [admin_level>=2] {
   	line-cap: butt;
     line-width: 1;
@@ -34,7 +32,7 @@ Map {
   	  line-cap:butt;
     }
   }
-  // States / Provices / Subregions
+// States / Provices / Subregions //
   [admin_level>=3] {
     line-width: 0.8;
     line-dasharray: 1,2; //length, gap
@@ -44,25 +42,7 @@ Map {
   }
 }
 
-// Water ////////////////////////////////////////////
-
- #bathymetry {
-  polygon-fill: rgb(16,12,4);
-  polygon-comp-op: minus;
-}
-
-#graticules-10 {
-  line-gamma: 0.01;
-  line-color: #468;
-  line-comp-op: color-dodge;
-}
-
-#texture {
-  polygon-pattern-file: url(static.png);
-  comp-op: soft-light;
-  opacity: 0.4;
-}
-
+// Water //
 #waterway {
       line-color:@water_line;
       line-width:2;
@@ -88,7 +68,7 @@ Map {
   }
 }
 
-// Land ////////////////////////////////////////////
+// Land //
 
 #landuse { 
   [class='cemetery'], [class='industrial'], [class='park'], 
@@ -105,7 +85,7 @@ Map {
       }
   }
 
-// Road ////////////////////////////////////////////
+// Road //
 
 #road {
   [class='motorway'], [class='motorway_link']{ 
@@ -157,7 +137,7 @@ Map {
   line-width: 2;
 }
 
-// Buildings ////////////////////////////////////////////
+// Buildings //
 
 #building::fill[zoom>=13][zoom<=22] {
       polygon-pattern-file:url(img/buildings3.png);
@@ -175,4 +155,32 @@ Map {
   line-geometry-transform:translate(2,1);
 }
 
-
+// Monsters //
+#marine_label::illo {
+  comp-op: overlay;
+  marker-allow-overlap:false;
+  marker-ignore-placement:true;
+  marker-width:0;
+  [name_en='North Atlantic Ocean'] {
+    marker-file:url(img/monster_octopus2.png);
+    marker-transform:translate(0,-100);
+  }
+  [name_en='Barents Sea'] {
+    marker-file:url(img/monster_lochness.png);
+    marker-transform:translate(0,-60);
+  }
+  [name_en='Tasman Sea']{
+    marker-file:url(img/monster_manaia.png);
+    marker-transform:translate(0,100);
+  }
+  [name_en='North Pacific Ocean']{
+    marker-file:url(img/monster_godzilla3.png);
+    marker-transform:translate(20,110);
+    marker-transform:skewX(2);
+    marker-allow-overlap: true;
+  }
+  [name_en='Indian Ocean']{
+    marker-file:url(img/monster_dolphin.png);
+    marker-transform:translate(-20,0);
+  }
+  }

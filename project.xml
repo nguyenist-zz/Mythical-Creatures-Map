@@ -5,11 +5,12 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-76.8494,38.8451,9</Parameter>
+  <Parameter name="center">15.293,50.8476,4</Parameter>
+  <Parameter name="description"><![CDATA[Mythical Monsters]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
-  <Parameter name="name"><![CDATA[Mythical Creatures]]></Parameter>
+  <Parameter name="name"><![CDATA[Mythical Monsters]]></Parameter>
   <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
@@ -17,24 +18,13 @@
 <Style name="landuse" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <Filter>([class] = 'sand')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
     <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([class] = 'sand')</Filter>
-    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
-    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
-    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([class] = 'wood')</Filter>
+    <Filter>([class] = 'pitch')</Filter>
     <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
   </Rule>
   <Rule>
@@ -50,17 +40,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
-    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([class] = 'park')</Filter>
-    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <Filter>([class] = 'industrial')</Filter>
     <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
     <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
@@ -72,13 +51,35 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'park')</Filter>
     <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
     <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000000</MinScaleDenominator>
-    <Filter>([class] = 'pitch')</Filter>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'sand')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'sand')</Filter>
     <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
   </Rule>
   <Rule>
@@ -187,45 +188,45 @@
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'motorway_link')</Filter>
+    <Filter>([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="1" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'motorway_link')</Filter>
+    <Filter>([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="0.25" stroke="#b0a45e" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'motorway_link')</Filter>
+    <Filter>([class] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="5" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
   </Rule>
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([class] = 'motorway_link')</Filter>
+    <Filter>([class] = 'motorway')</Filter>
     <LineSymbolizer stroke="#302512" stroke-width="0.1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([class] = 'motorway')</Filter>
+    <Filter>([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="1" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([class] = 'motorway')</Filter>
+    <Filter>([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="0.25" stroke="#b0a45e" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([class] = 'motorway')</Filter>
+    <Filter>([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="5" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
   </Rule>
   <Rule>
     <MinScaleDenominator>100000000</MinScaleDenominator>
-    <Filter>([class] = 'motorway')</Filter>
+    <Filter>([class] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#302512" stroke-width="0.1" />
   </Rule>
   <Rule>
@@ -240,12 +241,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([class] = 'main')</Filter>
+    <Filter>([class] = 'street')</Filter>
     <LineSymbolizer stroke="#302512" stroke-width="0.2" stroke-dasharray="4, 4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([class] = 'street')</Filter>
+    <Filter>([class] = 'main')</Filter>
     <LineSymbolizer stroke="#302512" stroke-width="0.2" stroke-dasharray="4, 4" stroke-linejoin="round" />
   </Rule>
 </Style>

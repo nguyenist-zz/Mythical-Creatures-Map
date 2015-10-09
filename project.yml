@@ -1,6 +1,6 @@
 _prefs: 
-  mapid: zugaldia.1f162b67
-  saveCenter: true
+  mapid: zugaldia.1d4fdf65
+  saveCenter: false
 _properties: 
   bridge: 
     "group-by": layer
@@ -11,18 +11,17 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -76.8494
-  - 38.8451
-  - 9
-description: ''
+  - 15.293
+  - 50.8476
+  - 4
+description: Mythical Monsters
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
 maxzoom: 22
 minzoom: 0
-name: Mythical Creatures
+name: Mythical Monsters
 source: "mapbox:///mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
-  - monsters.mss
 template: ''

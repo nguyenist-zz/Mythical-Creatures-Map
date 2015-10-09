@@ -1,4 +1,3 @@
-# OSM Bright for Mapbox Studio
-
-A full-featured template / example project for Mapbox Studio using Mapbox Streets vector tiles.
-# Mythical-Creatures-Map
+Mapbox light
+===========================
+Light basemap style for [Mapbox Studio](https://github.com/mapbox/mapbox-studio).
