@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#ebe8c3" background-image="img/ricepaper.png" background-image-opacity="0.2">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-81.5625,8.7548,2</Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[Mythical Creatures]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5]]></Parameter>
+</Parameters>
+
+
+<Layer name="landcover"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="hillshade"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="contour"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="landuse" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'wood')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'pitch')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'sand')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'sand')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'industrial')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'industrial')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'park')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <Filter>([class] = 'cemetery')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000000</MinScaleDenominator>
+    <Filter>([class] = 'cemetery')</Filter>
+    <LineSymbolizer stroke="#362c12" stroke-width="0" smooth="0" simplify-algorithm="radial-distance" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000000</MaxScaleDenominator>
+    <PolygonPatternSymbolizer file="img/forest3.png" opacity="0.7" smooth="0" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="landuse"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>landuse</StyleName>  </Layer>
+
+<Style name="waterway" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <LineSymbolizer stroke="#faf9e1" stroke-width="2" smooth="2" simplify-algorithm="radial-distance" />
+  </Rule>
+</Style>
+<Layer name="waterway"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>waterway</StyleName>  </Layer>
+
+<Style name="water" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <PolygonSymbolizer fill="#faf8df" gamma="0.6" />
+    <LineSymbolizer stroke-width="0.8" stroke="#faf9e1" comp-op="multiply" smooth="2" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#faf8df" gamma="0.6" />
+    <LineSymbolizer stroke="#faf9e1" stroke-width="4" comp-op="multiply" smooth="2" />
+  </Rule>
+</Style>
+<Style name="water-grid" filter-mode="first">
+  <Rule>
+    <PolygonPatternSymbolizer file="img/water9.png" />
+  </Rule>
+</Style>
+<Layer name="water"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>water-grid</StyleName>
+    <StyleName>water</StyleName>  </Layer>
+
+<Layer name="aeroway"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="barrier_line"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="building-shadow" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <LineSymbolizer stroke="#362009" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round" clip="false" geometry-transform="translate(2,1)" />
+  </Rule>
+</Style>
+<Style name="building-fill" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PolygonPatternSymbolizer file="img/buildings3.png" opacity="0.5" smooth="0" comp-op="multiply" />
+  </Rule>
+</Style>
+<Layer name="building"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>building-fill</StyleName>
+    <StyleName>building-shadow</StyleName>  </Layer>
+
+<Layer name="landuse_overlay"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="tunnel" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#362207" stroke-width="2" />
+  </Rule>
+</Style>
+<Layer name="tunnel"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>tunnel</StyleName>  </Layer>
+
+<Style name="road" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([class] = 'driveway')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#2d2506" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'driveway')</Filter>
+    <LineSymbolizer comp-op="multiply" stroke-linejoin="round" />
+    <LinePatternSymbolizer file="img/line_highway.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([class] = 'path')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#2d2506" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <Filter>([class] = 'path')</Filter>
+    <LineSymbolizer comp-op="multiply" stroke-linejoin="round" />
+    <LinePatternSymbolizer file="img/line_highway.png" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="0.25" stroke="#b0a45e" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([class] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#302512" stroke-width="0.1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="1" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="0.25" stroke="#b0a45e" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke-width="5" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#b0a45e" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000000</MinScaleDenominator>
+    <Filter>([class] = 'motorway_link')</Filter>
+    <LineSymbolizer stroke="#302512" stroke-width="0.1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([class] = 'major_rail')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#5f5624" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([class] = 'minor_rail')</Filter>
+    <LineSymbolizer stroke-width="2" stroke-dasharray="2, 2" stroke-linejoin="round" stroke="#5f5624" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([class] = 'street')</Filter>
+    <LineSymbolizer stroke="#302512" stroke-width="0.2" stroke-dasharray="4, 4" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([class] = 'main')</Filter>
+    <LineSymbolizer stroke="#302512" stroke-width="0.2" stroke-dasharray="4, 4" stroke-linejoin="round" />
+  </Rule>
+</Style>
+<Layer name="road"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>road</StyleName>  </Layer>
+
+<Layer name="bridge"
+  group-by="layer"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="admin" filter-mode="first" comp-op="multiply">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3) and ([disputed] = 1)</Filter>
+    <LineSymbolizer stroke-width="3.2" stroke-dasharray="4, 4" stroke-linecap="butt" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3) and ([disputed] = 1)</Filter>
+    <LineSymbolizer stroke-width="2.2" stroke-dasharray="4, 4" stroke-linecap="butt" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3) and ([disputed] = 1)</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke-dasharray="4, 4" stroke-linecap="butt" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3) and ([disputed] = 1)</Filter>
+    <LineSymbolizer stroke-dasharray="4, 4" stroke-linecap="butt" stroke-width="0.8" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3)</Filter>
+    <LineSymbolizer stroke-width="3.2" stroke-dasharray="1, 2" stroke-linecap="butt" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3)</Filter>
+    <LineSymbolizer stroke-width="2.2" stroke-dasharray="1, 2" stroke-linecap="butt" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3)</Filter>
+    <LineSymbolizer stroke-width="1.2" stroke-dasharray="1, 2" stroke-linecap="butt" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 3)</Filter>
+    <LineSymbolizer stroke-width="0.8" stroke-dasharray="1, 2" stroke-linecap="butt" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 2) and ([disputed] = 1)</Filter>
+    <LineSymbolizer stroke-dasharray="4, 4" stroke-linecap="butt" stroke-width="4" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 2) and ([disputed] = 1)</Filter>
+    <LineSymbolizer stroke-dasharray="4, 4" stroke-linecap="butt" stroke-width="3" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 2) and ([disputed] = 1)</Filter>
+    <LineSymbolizer stroke-dasharray="4, 4" stroke-linecap="butt" stroke-width="1" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 2)</Filter>
+    <LineSymbolizer stroke-width="4" stroke-linecap="butt" stroke-dasharray="3, 3" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 2)</Filter>
+    <LineSymbolizer stroke-width="3" stroke-linecap="butt" stroke-dasharray="3, 3" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([maritime] = 0) and ([admin_level] &gt;= 2)</Filter>
+    <LineSymbolizer stroke-linecap="butt" stroke-width="1" stroke-dasharray="3, 3" stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000000</MaxScaleDenominator>
+    <Filter>([maritime] = 0)</Filter>
+    <LineSymbolizer stroke-linejoin="miter" stroke="#3f2308" />
+  </Rule>
+</Style>
+<Layer name="admin"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>admin</StyleName>  </Layer>
+
+<Layer name="country_label_line"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="country_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="marine_label-illo" filter-mode="first" comp-op="overlay">
+  <Rule>
+    <Filter>([name_en] = 'Indian Ocean')</Filter>
+    <MarkersSymbolizer file="img/monster_dolphin.png" transform="translate(-20,0)" allow-overlap="false" ignore-placement="true" width="0" />
+  </Rule>
+  <Rule>
+    <Filter>([name_en] = 'North Pacific Ocean')</Filter>
+    <MarkersSymbolizer file="img/monster_godzilla3.png" transform="translate(20,110)" allow-overlap="true" ignore-placement="true" width="0" />
+  </Rule>
+  <Rule>
+    <Filter>([name_en] = 'Tasman Sea')</Filter>
+    <MarkersSymbolizer file="img/monster_manaia.png" transform="translate(0,100)" allow-overlap="false" ignore-placement="true" width="0" />
+  </Rule>
+  <Rule>
+    <Filter>([name_en] = 'Barents Sea')</Filter>
+    <MarkersSymbolizer file="img/monster_lochness.png" transform="translate(0,-60)" allow-overlap="false" ignore-placement="true" width="0" />
+  </Rule>
+  <Rule>
+    <Filter>([name_en] = 'North Atlantic Ocean')</Filter>
+    <MarkersSymbolizer file="img/monster_octopus2.png" transform="translate(0,-100)" allow-overlap="false" ignore-placement="true" width="0" />
+  </Rule>
+  <Rule>
+    <MarkersSymbolizer allow-overlap="false" ignore-placement="true" width="0" />
+  </Rule>
+</Style>
+<Layer name="marine_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>marine_label-illo</StyleName>  </Layer>
+
+<Layer name="state_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="place_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="water_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="poi_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="road_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="waterway_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="housenum_label"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+</Map>
